@@ -25,3 +25,13 @@ You can hit the spacebar to open the UI in a browser.
         allow_k8s_contexts('tap-beta2')
     to your Tiltfile. Otherwise, switch k8s contexts and restart Tilt.
     ```
+
+```
+tanzu apps workload create tanzu-java-web-app \
+--git-repo https://github.com/liviu-florin-ilie/tanzu-java-web-app \
+--git-branch main \
+--type web \
+--label app.kubernetes.io/part-of=java-web-app \
+--yes \
+--namespace ilieeliv
+```
